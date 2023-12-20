@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: black;
+    font-weight: 400;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1440px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 53px;
+    background-color: white;
+}
+
+.container{
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+}
+
+.nav-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 130px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.topnav a,
+.topnav div {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.1s ease-in-out;
+}
+
+.topnav a:hover{
+    color: #0088FF;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.color-white{
+    color: white;
+}
+
+/* Footer */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #252525;
+    padding: 24px;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.footer-logo-container{
+    width: 120px;
+}
+
+.footer-logo-container img{
+    width: 100%;
+}
+
+.footer-menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-menu-container a{
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.footer-contacts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-contact-item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-contact-image{
+    width: 20px;
+}
+
+.footer-find-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.footer-find-item{
+    color: white;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-data{
+        min-width: 100%;
+    }
+    .topnav{
+        display: none;
+        
+    }
+    .responsive{
+        display: block;
+        float: none;
+        width: 100%;
+
+    }
+    .responsive a{
+        float: none;
+        padding: 10px 0;
+    }
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    .menu-icon{
+        display: block;
+    }
+}

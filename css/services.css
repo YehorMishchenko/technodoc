@@ -1,0 +1,114 @@
+.services-container{
+    background-color: #263B82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.services-container h2{
+    color: white;
+}
+
+.services-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.services-container table tr td {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.services-container table tr:nth-child(odd) {
+    background-color: #1a2f75;
+}
+
+.services-container table tr:nth-child(even) {
+    background-color: #162967;
+}
+
+.services-container table th {
+    background-color: #162967;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ordering-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordering-subcontainer{
+    margin: 24px;
+    background-color: #162967;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ordering-subcontainer h2{
+    color: white;
+    text-align: center;
+    margin: 12px;
+}
+
+.ordering-fields-container {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Додайте цю властивість, щоб вирівнювати елементи по центру по вертикалі */
+}
+
+label{
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #162967;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #162967;
+    height: 500px;
+    color: white;
+    resize: none;
+}
+
+.order-button a{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #0088FF;
+    height: 50px;
+    padding: 0 50px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    justify-content: center;
+}
+
+.order-button a:hover{
+    background-color: #1592ff;
+}
+
+.order-button a:active{
+    background-color: #0080f0;
+}

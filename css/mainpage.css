@@ -1,0 +1,204 @@
+
+/* Преший блок з великою картинкою */
+
+
+
+.proposition-list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 150px;
+    gap: 10px;
+    width: 420px;
+}
+
+.proposition-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18pt;
+    margin-bottom: 25px;
+}
+
+.proposition-container ul {
+    list-style: none;
+    padding-left: 0; 
+}
+
+.proposition-container ul li {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 24px; 
+    position: relative; 
+    margin-bottom: 15px;
+}
+
+.proposition-container ul li::before {
+    content: ''; 
+    background-image: url('/assets/check.svg'); 
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.proposition-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.proposition-button a{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #0088FF;
+    height: 50px;
+    padding: 0 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Другий блок з описом компанії */
+
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+
+.about-more{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.about-header{
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+.about-more-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.about-more-container-reverse{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.about-more-subcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+.about-more-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18pt;
+    gap: 12px;
+    padding-top: 24px;
+}
+
+.about-more-decription{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.about-more-header img{
+    width: 28px;
+}
+
+.about-more-image {
+    max-width: 700px;
+    max-height: 700px;
+    flex: 1;
+}
+
+.about-more-image img{
+    width: 100%;
+}
+
+
+
+/* Анімації різні там, і тому подібне */
+
+.proposition-button a:hover{
+    background-color: #1592ff;
+}
+
+.proposition-button a:active{
+    background-color: #0080f0;
+}
+
+@media screen and (max-width: 900px) {
+    .about-more-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-more-container-reverse{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .about-more-image {
+        max-width: 500px;
+        max-height: 500px;
+
+    }
+
+    .about-more-header{
+
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .proposition-list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding-left: 0;
+        align-items: center; /* Додаємо цей рядок для вирівнювання в центрі по горизонталі */
+    }
+
+    .proposition-container{
+        text-align: center;
+    }
+    .proposition-container ul{
+        display: inline-block;
+        text-align: left;
+    }
+}

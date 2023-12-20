@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TechnoDoc – Послуги</title>
+</head>
+<body>
+    <div id="home"  class="main-container">
+        <header class="header container">
+            <div class="nav-data">
+                <div class="logo">
+                    <img class="icon" src="assets/TehnoDocBigLogo.png">
+                </div>
+                <a href="javascript:void(0);" class="icon menu-icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="shop.html">Магазин</a>
+                <a href="services.html">Послуги</a>
+                <a href="index.html">Про нас</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+        </header>
+
+
+        <section class="services-container">
+            <h2>Послуги</h2>
+            <table>
+                <tr>
+                    <td>Встановлення віндовс, оптимізація роботи операційної системи та BIOS</td>
+                    <td>950</td>
+                </tr>
+                <tr>
+                    <td>Діагностика, розмітка HDD, SSD налаштування ОС Windows 11</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>Збереження даних, перевірка та лікування від вірусів (до 500Gb)</td>
+                    <td>550</td>
+                </tr>
+                <tr>
+                    <td>Профілактика відеокарти (очищення від пилу, заміна термоінтерфейсу)</td>
+                    <td>від 550</td>
+                </tr>
+                <tr>
+                    <td>Перевірка на наявність вірусів і лікування. Видалення програм рекламного характеру</td>
+                    <td>від 550</td>
+                </tr>
+                <tr>
+                    <td>Заміна сенсора / дисплея, Заміна дисплейного модуля, Перепрошивка</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>Ремонт системної плати, Ремонт / заміна роз’ємів для гарнітур, зарядки</td>
+                    <td>від 550</td>
+                </tr>
+                <tr>
+                    <td>Налаштування програмного забезпечення / перепрошивка</td>
+                    <td>від 550</td>
+                </tr>
+                <tr>
+                    <td>Ремонт / заміна динаміка, Заміна сенсора / дисплея, Ремонт / заміна мікрофона</td>
+                    <td>від 550</td>
+                </tr>
+                <tr>
+                    <td>Діагностика SSD, HDD, Заміна HDD/SSD диску із збереженням інформації</td>
+                    <td>від 550</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="ordering-container">
+            <div class="ordering-subcontainer">
+                <h2>Замовити консультацію</h2>
+                <div class="ordering-fields-container">
+                    <label for="fname">Прізвище та ім'я</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="phone">Номер телефону</label>
+                    <input type="tel" id="phone" name="lname">
+                    <label for="email">Ел. пошта</label>
+                    <input type="email" id="email" name="lname">
+                    <label for="are">Опишіть вашу проблему</label>
+                    <textarea></textarea>
+                    <div class="order-button">
+                        <a class="button">
+                            Надіслати
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contacts" class="footer-container container">
+            <div class="footer-logo-container">
+                <img src="assets/TehnoDocBigWhiteLogo.png">
+            </div>
+            <div class="footer-menu-container">
+                <h2 class="color-white">Меню</h2>
+                <a href="shop.html" class="footer-menu-item">Магазин</a>
+                <a href="services.html" class="footer-menu-item">Послуги</a>
+                <a href="index.html" class="footer-menu-item">Про нас</a>
+                <a href="#contacts" class="footer-menu-item">Контакти</a>
+            </div>
+            <div class="footer-contacts-container">
+                <h2 class="color-white">Контакти</h2>
+                <div class="footer-contact-item">
+                    <img src="assets/PhoneWhite.png" alt="" class="footer-contact-image">
+                    <div class="color-white">+380 67 777 99 88</div>
+                </div>
+                <div class="footer-contact-item">
+                    <img src="assets/InstagramWhite.png" alt="" class="footer-contact-image">
+                    <div class="color-white">@technodoc_ua</div>
+                </div>
+                <div class="footer-contact-item">
+                    <img src="assets/TelegramWhite.png" alt="" class="footer-contact-image">
+                    <div class="color-white">@technodocua</div>
+                </div>
+            </div>
+            <div class="footer-find-container">
+                <h2 class="color-white">
+                    Де нас знайти?
+                </h2>
+                <div class="footer-find-item">м. Кривий Ріг, Героїв України 47</div>
+                <div class="footer-find-item">м. Кривий Ріг, Сахарова 27</div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var x = document.getElementById("myTopnav");
+        function myFunction() {
+        
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        const mediaQuery = window.matchMedia('(min-width: 600px)');
+            function handleMediaChange(event) {
+                if (!event.matches) x.className = "topnav";
+            }
+            mediaQuery.addListener(handleMediaChange);
+            handleMediaChange(mediaQuery);
+    </script>
+</body>
+</html>
